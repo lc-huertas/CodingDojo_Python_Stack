@@ -74,7 +74,7 @@ dojo = {
 }
 
 def printInfo(data):
-    for set in dojo:
+    for set in data:
         num = len(data[set])
         [print(f"{num} {set}")]
         for content in data[set]:
