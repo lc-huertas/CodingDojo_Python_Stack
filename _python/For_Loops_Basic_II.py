@@ -119,3 +119,18 @@ def UA(data):
 datatest = [1, 2, 3, 4]
 print(datatest)
 print(UA(datatest))
+
+# 9. Reverse List - Create a function that takes a list and return that list with values reversed.
+#    Do this without creating a second list. (This challenge is known to appear during basic technical interviews.)
+#    Example: reverse_list([37,2,1,-9]) should return [-9,1,2,37]
+
+def reverse_list(data):
+    newlist=[]
+    for i in range(0,len(data)):
+        j=len(data)-i-1
+        newlist.append(data[j])
+    return newlist
+
+datatest = [1, 2, 3, 4]
+print(datatest)
+print(reverse_list(datatest))
